@@ -30,3 +30,8 @@ git branch                              permet de lister les branches,
 
 git branch nom_de_la_branche            permet de créer une copie de la branche principale (master) au moment où on l'a créer.
 
+git checkout nom_de_la_branche          basculer vers cette branche
+
+git merge nom_de_la_branche             fusionne la branchenom_de_la_branche à al branche principale (master)
+
+git branch -d nom_de_la_branche         supprimer la branche.
