@@ -19,4 +19,14 @@ touch: 					                créer un fichier dans le dossier selectionné
 git add nom_du_fichier:				    permet d'indexer ce fichier git. Peut mnt suivre l'evolution des modifications apporter sur le fichier.
 
 git add .                                permet d'ajouter tous les fichiers du dossier
+git add index*                           pour ajouter l'ensemble des fichiers commencant par index
 git status:			                    permet de voir l'etat du depot (donne des details sur les fichiers qui sont indexés et les fichiers qui ne le sont pas encore).
+
+git commit "message du commit"          enregistre l'etat du repository a linstant. il lui donne un identifiant pour pouvoir revenir sur le commit plus tard
+
+git reset --hard numero_du_commit:      revenir sur le commit en question
+
+git branch                              permet de lister les branches,
+
+git branch nom_de_la_branche            permet de créer une copie de la branche principale (master) au moment où on l'a créer.
+
