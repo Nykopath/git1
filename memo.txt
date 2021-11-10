@@ -18,8 +18,12 @@ touch: 					                créer un fichier dans le dossier selectionné
 
 git add nom_du_fichier:				    permet d'indexer ce fichier git. Peut mnt suivre l'evolution des modifications apporter sur le fichier.
 
+git log                                 afficher l'historique des commit
+
 git add .                                permet d'ajouter tous les fichiers du dossier
+
 git add index*                           pour ajouter l'ensemble des fichiers commencant par index
+
 git status:			                    permet de voir l'etat du depot (donne des details sur les fichiers qui sont indexés et les fichiers qui ne le sont pas encore).
 
 git commit "message du commit"          enregistre l'etat du repository a linstant. il lui donne un identifiant pour pouvoir revenir sur le commit plus tard
@@ -32,6 +36,12 @@ git branch nom_de_la_branche            permet de créer une copie de la branche
 
 git checkout nom_de_la_branche          basculer vers cette branche
 
-git merge nom_de_la_branche             fusionne la branchenom_de_la_branche à al branche principale (master)
+git merge nom_de_la_branche             fusionne la nom_de_la_branche à al branche principale (master)
 
 git branch -d nom_de_la_branche         supprimer la branche.
+
+git checkout -b                         créer la branche et basculer dessus
+
+git remote add origin url_du_repository distant va connecter le repository local au repository distant.
+
+git push va envoyer les modifications apportés en local vers le serveur.

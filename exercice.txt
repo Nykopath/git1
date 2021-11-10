@@ -1,0 +1,111 @@
+exercice
+
+créer une nouvelle fonctionalité correspondant à un formulaire de connexion
+pour cela, créer une branch connexion
+se positionner sur la branch
+créer le fichier connexion.html
+enregistrer et valider les modifications
+fusionnerla branche inscrpition, connexion a la branche master
+
+et supprimer la branche connexion
+
+
+
+
+-----------------------------------------------CORRECCTION---------------------------------
+
+
+
+
+----------------------------------CREER UNE NOUVELLE BRANCHE-------------------
+Nyko@Nyko-PC MINGW64 //NYKO-LAPTOP-PC/Users/Public/Documents/DorancoPC/10-GitHub/git1 (master)
+$ git checkout -b conexion
+Switched to a new branch 'conexion'
+
+
+
+
+
+---------------------------------AFFICHER LES BRANCHES-----------------------------------
+Nyko@Nyko-PC MINGW64 //NYKO-LAPTOP-PC/Users/Public/Documents/DorancoPC/10-GitHub/git1 (conexion)
+$ git branch
+* conexion
+  master
+
+
+
+
+---------------------------------CREER UN FICHIER HTML---------------------------------
+Nyko@Nyko-PC MINGW64 //NYKO-LAPTOP-PC/Users/Public/Documents/DorancoPC/10-GitHub/git1 (conexion)
+$ touch connexion.html
+
+
+
+
+------------------------------AJOUTER LE FICHIER HTML A LA BRANCHE---------------------------
+Nyko@Nyko-PC MINGW64 //NYKO-LAPTOP-PC/Users/Public/Documents/DorancoPC/10-GitHub/git1 (conexion)
+$ git add .
+
+
+
+
+
+--------------------------------------NOMMER LE COMMIT-------------------------------------
+Nyko@Nyko-PC MINGW64 //NYKO-LAPTOP-PC/Users/Public/Documents/DorancoPC/10-GitHub/git1 (conexion)
+$ git commit -m "ajout de formulaire de connexion"
+[conexion 4902892] ajout de formulaire de connexion
+ 3 files changed, 29 insertions(+), 1 deletion(-)
+ create mode 100644 connexion.html
+
+
+
+
+
+-------------------------------------BASCULER VERS LA BRANCHE MASTER------------------------
+Nyko@Nyko-PC MINGW64 //NYKO-LAPTOP-PC/Users/Public/Documents/DorancoPC/10-GitHub/git1 (conexion)
+$ git checkout master
+Switched to branch 'master'
+
+
+
+
+---------------------------FUSIONNE LA CONEXION A LA BRANCHE PARINCIPAL-----------------------
+Nyko@Nyko-PC MINGW64 //NYKO-LAPTOP-PC/Users/Public/Documents/DorancoPC/10-GitHub/git1 (master)
+$ git merge conexion
+Updating 36fa82b..4902892
+Fast-forward
+ connexion.html | 23 +++++++++++++++++++++++
+ memo.txt       |  5 +++++
+ register.html  |  2 +-
+ 3 files changed, 29 insertions(+), 1 deletion(-)
+ create mode 100644 connexion.html
+
+
+
+
+-----------------------------AFFICHER LES DIFFERENTS COMMIT--------------------------
+Nyko@Nyko-PC MINGW64 //NYKO-LAPTOP-PC/Users/Public/Documents/DorancoPC/10-GitHub/git1 (master)
+$ git log
+commit 4902892c8e967d537816fdf6d0732945c8efc295 (HEAD -> master, conexion)
+Author: Nykopath <fanfandehd@gmail.com>
+Date:   Wed Nov 10 15:55:30 2021 +0100
+
+    ajout de formulaire de connexion
+
+commit 36fa82b1cca60487222419adb925bdd9c72d6071
+Author: Nykopath <fanfandehd@gmail.com>
+Date:   Wed Nov 10 15:01:32 2021 +0100
+
+    ajout du formulaire d'inscription
+
+commit 7381f75603cf52d2bbce0c9ac56cc48c6db45e20
+Author: Nykopath <fanfandehd@gmail.com>
+Date:   Wed Nov 10 14:11:45 2021 +0100
+
+    premier commit
+
+
+
+exercice: créer une page accueil.html mettre du contenu dedans
+valider les modifications (git add git commit)
+envoyer les modifications vers le serrveur GitHub
