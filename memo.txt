@@ -1,0 +1,22 @@
+Git --version				            Affiche la version de GIT
+
+Git init: 			                    Permet d'initialser (faire comprendre a git que ce repertoire est un repertoire dont on souhaite avoir l'historique des                   modifications) un repository.
+
+ls:					                    Affiche tous les dossiers et fichier dans un dossier
+
+cd:					                    Entrer dans le dossier
+
+mkdir:					                Créer un dossier
+
+ls -a:					                liste les dossiers et fichiers cachés
+
+pwd: 					                indique le chemin du dossier
+
+rm -r (+)nom du dossier a effacer : 	effacer le dossier
+
+touch: 					                créer un fichier dans le dossier selectionné
+
+git add nom_du_fichier:				    permet d'indexer ce fichier git. Peut mnt suivre l'evolution des modifications apporter sur le fichier.
+
+git add .                                permet d'ajouter tous les fichiers du dossier
+git status:			                    permet de voir l'etat du depot (donne des details sur les fichiers qui sont indexés et les fichiers qui ne le sont pas encore).
